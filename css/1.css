@@ -1,0 +1,194 @@
+/*html css*/
+body{
+  font-family: 'Helvetica',monospace;
+  overflow: auto;
+  color: black;
+  background-color: #dcedc8;
+}
+
+
+/*Side Panel of Website*/
+.mdl-layout__drawer{
+  color: white;
+  text-align: justify;
+  background-color: #212121;
+  border-right: transparent;
+}
+
+.mdl-layout__drawer > img{
+  margin-top: 20px;
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#button{
+    background-color: cornflowerblue;
+    margin-left: 0px;
+    border: 0px;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+}
+
+#button:hover,
+#button:focus{
+    background-color: ;
+    border: 0px;
+}
+
+
+.mdl-navigation__link > b{
+  color: grey;
+  font-size: 18px;
+}
+
+.mdl-navigation__link > i + b {
+  margin-left: 20px;
+}
+.mdl-navigation > a:hover,
+.mdl-navigation > a:focus {
+  border-color: transparent;
+  border-bottom: transparent;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/*Side Panel of Website is over*/
+
+/*Scroll*/
+.mdl-layout__content{
+  /*overflow: hidden;*/
+  /*overflow-y: hidden;*/
+}
+/*End of scroll*/
+
+/*Home Content of Website*/
+.home-content{
+    margin-left: 40px;
+    margin-top: 25px;
+    font-family: fantasy;
+    padding-bottom: 15px;
+}
+
+.home-content > .col-md-3{
+  margin-top: 0px;
+  padding-bottom: 80px;
+  font-size: 24px;
+}
+
+
+.home-content > span {
+  font-family:'Helvetica',monospace;
+  font-size: 24px;
+}
+
+.home-backbround{
+  background-image: url("../logo/cover.jpg");
+  padding-bottom:10px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  object-fit: cover;
+  padding-bottom: 50px;
+
+}
+#Appointment-btn{
+  text-align: center;
+}
+
+#Appointment-btn > button{
+  color: white;
+  margin-top: 479px;
+  background-color: rgba(0,0,0,.8);
+  border-color: transparent;
+  border-radius: 5px;
+}
+
+#Appointment-btn > button:hover,
+#Appointment-btn > button:focus {
+  border-color: transparent;
+  background-color: rgba(0,0,0,.3);
+  color: white;
+}
+
+/*End of Home content of Website*/
+
+/*Contact content of Website*/
+.contact-backbround{
+  background-image: url("../logo/cover2.jpg");
+  padding-bottom:10px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  object-fit: cover;
+  padding-bottom: 150px;
+}
+
+#contactform{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.title > h2{
+  text-align: center;
+}
+
+.panel-heading{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.panel-body{
+    margin-right: 100px;
+}
+
+/*End of Contact content of Website*/
+
+/*Footer*/
+.mdl-mini-footer{
+  padding-top: 15px;
+  padding-bottom: 14px;
+}
+
+/*Sign up Modal*/
+.mdl-navigation > button{
+    font-size: 18px;
+    font-family:'Helvetica',monospace;
+    background-color: transparent;
+    border-color: transparent;
+    color: grey;
+    text-align: center;
+    padding-right: 100px;
+    padding-left: 30px;
+}
+
+.modal-content > form{
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.modal-content > form > input{
+    /*margin-left: 50px;*/
+}
+.modal-content > h1{
+    text-align: center;
+}
+
+.mdl-navigation > button{
+    padding-left: 0px;
+}
+.mdl-navigation > button:hover,
+.mdl-navigation > button:focus{
+    background-color: transparent;
+    border-color: transparent;
+    border: 0px;
+}
