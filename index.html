@@ -1,0 +1,322 @@
+<!--
+	This is for Captcha
+	<div class="g-recaptcha" data-sitekey="6LcfshMUAAAAAMT43KxQV-uBHcjI33d9l4R4YBKN"></div>
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>E-Barber Shop</title>
+
+	<link rel="stylesheet" type="text/css" href="mdl/material.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/1.css"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer" id="sidepanel">
+	  <!--Side Panel of Website-->
+	  <div class="mdl-layout__drawer">
+	  	<img src="logo/logo3.jpg">
+			<br>
+				<!-- MDL Progress Bar with Buffering -->
+				<div id="p3" class="mdl-progress mdl-js-progress"></div>
+				<script>
+				  document.querySelector('#p3').addEventListener('mdl-componentupgraded', function() {
+				    this.MaterialProgress.setProgress(85);
+				    this.MaterialProgress.setBuffer(90);
+				  });
+				</script>
+
+	    <span class="mdl-layout-title"></span>
+	    <nav class="mdl-navigation">
+	      <a class="mdl-navigation__link" href="#Home"><b>HOME</b></a>
+	      <a class="mdl-navigation__link" href="#Staff"><b>STAFF</b></a>
+	      <a class="mdl-navigation__link" href="#Details"><b>DETAILS</b></a>
+		  <a class="mdl-navigation__link" id="signup" href="#Contact"><b>CONTACT US</b></a>
+          <a class="mdl-navigation__link" href="Blog.html" traget="_self"><b>BLOGS</b></a>
+	    </nav>
+	  </div>
+        
+      <div class="modal fade bs-example-modal-lm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" >
+            <div class="modal-dialog modal-lm" role="document" >
+                <div class="modal-content" style="background-color: #212121;color: white">
+                    <h1>Create Account</h1>
+                    <form name="signup" action="signin.php" method="post" style="margin-left: 115px">
+                        <span>First Name: </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span>Last Name: </span><br>
+                        <input type="text" name="fname" style="color: black;" required>&nbsp;&nbsp;&nbsp;
+                        <input type="text" name="lname" style="color: black;" required><br><br>
+                        <span>User Name:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span>Password:</span><br>
+                        <input type="text" name="uname" style="color: black;" required>&nbsp;&nbsp;&nbsp;
+                        <input type="password" name="pass" style="color: black;" required><br><br>
+                        <span>Email ID:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span> Mobile No:</span><br>
+                        <input type="email" name="email" style="color: black;" required>&nbsp;&nbsp;&nbsp;
+                        <input type="text" name="mono" style="color: black;" required>
+                        <br><br>
+                        <div class="g-recaptcha" data-sitekey="6LcfshMUAAAAAMT43KxQV-uBHcjI33d9l4R4YBKN"></div><br>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1"><b>Already Have Account?</b></button><br><br>
+                        <input type="submit" id="button">
+                    </form>
+                </div>
+            </div>
+      </div>
+        
+              <div class="modal fade bs-example-modal-lm" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" >
+            <div class="modal-dialog modal-lm" role="document" >
+                <div class="modal-content" style="background-color: #212121;color: white">
+                    <h1>Welcome Back</h1>
+                    <form name="signup" method="" style="margin-left: 55px;margin-right: 55px;;border: 1px solid white;text-align: center;padding-left: 80px;padding-right: 80px;padding-top: 110px;padding-bottom: 110px;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>USERNAME: </span>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" name="uname" style="color: black;" required><br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span>PASSWORD:</span>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="password" name="pass" style="color: black;" required><br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a>Forgrot your password?</a><br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="submit" value="Appintment Form" id="button">
+                    </form>
+                </div>
+            </div>
+      </div>
+        
+	  <main class="mdl-layout__content">
+	    <div class="page-content">
+	    	<div id="Home" onscroll="">
+                <div class="home-content">
+                    <h1>E-BARBER SHOP</h1>
+				</div>
+                <div id="login" style = "position: absolute; top: 50%; left: 50%;">
+                </div>
+					<div class="home-backbround">
+				    <p class="home" id="Appointment-btn">
+				      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"><b>Get Appointment</b></button>
+				    </p>
+					</div>
+	    	</div>
+
+	    	<div id="Staff">
+	    	<nav class="navbar navbar-default navbar-fixed" style="border-color: transparent;background-color: rgba(0,0,0,.1);">
+			  <div class="container" style="text-align: center; font-size: 24px;margin-top: 20px;margin-bottom: 20px;">
+			    <span><b>Hair Stylist & Member of E-Barber</b></span>
+			  </div>
+			</nav>
+	    	<div style="padding-bottom: 250px;">
+	    		<div class="mdl-grid portfolio-max-width">
+                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+                    <div class="mdl-card__media" style="background-color: #616161">
+                        <img class="article-image" src="logo/staff1.jpg" border="0" alt="SAGAR PANDAV" height="300px">
+                    </div>
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text" style="color: black;">SAGAR PANDAV</h2>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+                    <div class="mdl-card__media" style="background-color: #616161">
+                        <img class="article-image" src="logo/staff1.jpg" border="0" alt="DARSHAN DALAL" height="300px">
+                    </div>
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text" style="color: black;">DARSHAN DALAL</h2>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+                    <div class="mdl-card__media" style="background-color: #616161">
+                        <img class="article-image" src="logo/staff1.jpg" border="0" alt="VATSAL TRIVEDI" height="300px">
+                    </div>
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text" style="color: black;">VATSAL TRIVEDI</h2>
+                    </div>
+                </div>
+	    	</div>
+	    	</div>
+
+		    <div id="Details">
+
+		    <nav class="navbar navbar-default navbar-fixed" style="border-color: transparent;background-color: rgba(0,0,0,.1);">
+			  <div class="container" style="text-align: center; font-size: 24px;margin-top: 20px;margin-bottom: 20px;">
+			    <span><b>Weekly Routine &amp Details</b></span>
+			  </div>
+			</nav>
+
+			    <div class="container marketing" style="padding-bottom: 400px;">
+
+			      <div class="row" style="margin-top: 100px;text-align: center;text-decoration: blink;">
+			        <div class="col-lg-1 col-lg-offset-2 col-sm-3">
+			          <img class="img-circle" src="logo/Monday.png" alt="Monday" width="75" height="75" style="background-color: rgba(0,0,0,.9);">
+			          <p><b>8am-1pm 3pm-8pm</b></p>
+			        </div>
+			        <div class="col-lg-1 col-md-offset-0 col-sm-3">
+			          <img class="img-circle" src="logo/tuesday.png" alt="Tuesday" width="75" height="75" style="background-color: rgba(0,0,0,.8);">
+			          <p><b>8am-1pm 3pm-8pm</b></p>
+			        </div>
+			        <div class="col-lg-1 col-md-offset-0 col-sm-3">
+			          <img class="img-circle" src="logo/Wednesday.png" alt="Wednesday" width="75" height="75" style="background-color: rgba(0,0,0,.7)">
+			          <p><b>8am-1pm 3pm-8pm</b></p>
+			        </div>
+			        <div class="col-lg-1 col-md-offset-0 col-sm-3">
+			          <img class="img-circle" src="logo/Thursday.png" alt="Thursday" width="75" height="75" style="background-color: rgba(0,0,0,.9);">
+			          <p><b>8am-1pm 3pm-8pm</b></p>
+			        </div>
+			        <div class="col-lg-1 col-md-offset-0 col-sm-3">
+			          <img class="img-circle" src="logo/Friday.png" alt="Friday" width="75" height="75" style="background-color: rgba(0,0,0,.7);">
+			          <p><b>8am-1pm 3pm-8pm</b></p>
+			        </div>
+			        <div class="col-lg-1 col-md-offset-0 col-sm-3">
+			          <img class="img-circle" src="logo/Saturday.png" alt="Saturday" width="75" height="75" style="background-color: rgba(0,0,0,.8);">
+			          <p><b>Holiday Break</b></p>
+			        </div>
+
+			        <div class="col-lg-1 col-md-offset-0 col-sm-3">
+			          <img class="img-circle" src="logo/Sunday.png" alt="Sunday" width="75" height="75" style="background-color: rgba(0,0,0,.9);">
+			          <p><b>8am-1pm 3pm-6pm</b></p>
+			        </div>
+			      </div>
+                    <div class="item">
+                    
+                    </div>
+	    	</div>
+
+
+	    	<div id="Contact">
+				<div class="contact-backbround">
+					<div class="mdl-card__title">
+					</div>
+				</div>
+				<nav class="navbar navbar-default navbar-fixed" style="border-color: transparent;background-color: rgba(0,0,0,.1);">
+				  <div class="container" style="text-align: center; font-size: 24px;margin-top: 20px;margin-bottom: 20px;">
+				    <span><b>Get in touch with us</b></span>
+				  </div>
+				</nav>
+
+			<div class="container" id="contactform">
+		      <div class="panel panel-default form-panel" style="background-color: transparent; width: 1075px;">
+                  <div class="col-sm-12 col-lg-12"> 
+		        <div class="panel-heading">
+		          <h1 align="left">Contact Us</h1>
+		        </div>
+		        <div class="row">
+		          <div class="col-md-4">
+		            <div class="panel-body panel-nopadding">
+		              <span class="contact-us-title" style="font-size: 18px;"><b>Call us at:</b></span><br><br>
+		              <span>Surat:     (+91)-876-451-1234</span><br>
+		              <span>Ahmedabad: (+91)-874-562-1234</span><br>
+		              <span>Vadodra:   (+91)-889-421-1234</span><br>
+		              <span>Mumbai:    (+91)-900-754-1234</span><br>
+		              <br>
+		              <span class="contact-us-title" style="font-size: 18px;"><b>Email us at:</b></span><br><br>
+		              <span>javedhabib@gmail.com</span>
+		            </div>
+		          </div>
+		          <div class="col-md-8">
+		            <div class="panel-body">
+
+		              <form action="contact.php" method="post" novalidate="novalidate">
+		              <div class="message-error">
+
+		              </div>
+		                <div class="form-fields" >
+		                    <div class="inputs-left">
+
+		                        <div class="form-group row">
+		                            <label class="col-md-3 col-sm-12 control-label" for="FullName">Name:</label>
+		                            <div class="col-md-6">
+		                                <input class="form-control" data-val="true" data-val-required="Enter your name" id="FullName" name="FullName" placeholder="Enter your name" type="text" value="">
+		                            </div>
+		                            <div class="col-md-4 ">
+		                                <span class="field-validation-valid" data-valmsg-for="FullName" data-valmsg-replace="true"></span>
+		                            </div>
+		                        </div>
+
+		                        <div class="form-group row">
+		                            <label class="col-md-3 control-label" for="Email">Email Address:</label>
+		                            <div class="col-md-6">
+		                                <input class="form-control" data-val="true" data-val-email="Wrong email" data-val-required="Enter email" id="Email" name="Email" placeholder="Enter your email address" type="text" value="">
+		                            </div>
+		                            <div class="col-md-4">
+		                                <span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+		                            </div>
+		                        </div>
+		                    </div>
+
+		                    <div class="form-group row">
+		                        <label class="col-md-3 col-sm-12 control-label" for="Enquiry">Enquiry:</label>
+		                        <div class="col-md-6">
+		                            <textarea class="enquiry form-control" cols="20" data-val="true" data-val-required="Enter enquiry" id="Enquiry" name="Enquiry" placeholder="Enter your enquiry" rows="2" ></textarea>
+		                        </div>
+		                        <div class="col-md-4">
+		                            <span class="field-validation-valid" data-valmsg-for="Enquiry" data-valmsg-replace="true"></span>
+		                        </div>
+		                    </div>
+		                </div>
+		                <div class="buttons">
+		                    <input style="background-color: rgba(0,0,0,.4);padding: 10px;color: white;padding-left:15px;padding-right: 15px;margin-left: 188px;@media(max-width: 400px){margin-left: 0px;};" type="submit" name="send-email" class="button-1 register-next-step-button btn btn-default" value="Submit">
+		                </div>
+		          </form>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+                </div>  
+    		</div>
+
+	    	</div>
+
+	    	<footer class="mdl-mini-footer" style="background-color: rgba(0,0,0,.1);">
+	    		<div class="col-md-3">
+		          <div class="mdl-mini-footer--left-section">
+		            <img src="logo/facebook.png">&nbsp;
+		            <img src="logo/instagram.png">&nbsp;
+		            <img src="logo/youtube.png">
+		          </div>
+	          	</div>
+
+	          	<div class="col-md-6">
+
+	         	</div>
+
+	          	<div class="col-md-3">
+			        <div class="mdl-mini-footer--right-section" style="margin-left: 200px;">
+			            <i class="material-icons"><!--help_outline--></i>
+			        </div>
+		        </div>
+	        </footer>
+
+	    </div>
+	  </main>
+	</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<script src="mdl/material.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>$('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').focus()
+            })
+    </script>
+          <script>
+              /*function login()
+              {
+                  var inter = '<form id="login1" action="E:/Html/WebTech%20Project/main.html">'; 
+                  inter += 'Username: <input type="text" name="name"><br><br>';
+                  inter += 'Password: <input type="password value="Enter your Password"><br><br>';
+                  inter += '<input type="Submit" onclick="uname()" value="Login">';
+                  inter += '</form>';
+                  document.write(inter);
+              }
+              function main()
+              {
+                  window.location="E:/Html/WebTech%20Project/main.html?name=#Home";
+              }
+              function uname()
+              {
+                  var x = document.getElementById("login1");
+                  var uname = "";
+                  uname = x.element[0].value + "<br>" ;
+                  document.getElementById("welcome").innerHTML = "Welcome, " +uname;
+              }*/
+          </script>
+</body>
+</html>
